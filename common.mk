@@ -62,6 +62,9 @@ PRODUCT_COPY_FILES += \
     hardware/samsung_slsi/libbt/conf/bt_vendor.conf:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth/bt_vendor.conf \
     $(COMMON_PATH)/configs/sysconfig/component-overrides.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/component-overrides.xml
 
+# Gapps
+$(call inherit-product, vendor/gapps/common/common-vendor.mk)
+
 # Graphene Camera
 PRODUCT_PACKAGES += \
     GrapheneOSCamera
