@@ -86,7 +86,7 @@ TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS := 0x2000U | 0x400000000LL
 BOARD_KERNEL_IMAGE_NAME := Image
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_CLANG_COMPILE := true
-TARGET_KERNEL_SOURCE := kernel/samsung/a50-common
+TARGET_KERNEL_SOURCE := kernel/samsung/a50
 TARGET_KERNEL_CONFIG := a50_defconfig
 
 ## Keymaster
@@ -134,7 +134,7 @@ VENDOR_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH)
 
 ## SELinux
 BOARD_SEPOLICY_TEE_FLAVOR := teegris
-include device/custom/sepolicy/exynos/sepolicy.mk
+include device/lineage/sepolicy/exynos/sepolicy.mk
 include device/samsung_slsi/sepolicy/sepolicy.mk
 
 BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
